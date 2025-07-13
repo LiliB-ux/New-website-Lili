@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lili | Front-End Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #fef9fb;
+      --primary: #b30059;
+      --text: #333;
+      --accent: #ffe6f0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: var(--accent);
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .project-card h3 {
+      color: var(--primary);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm Lili</h1>
+    <p>Front-End Developer | Passionate about UI/UX & interactive design</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://docs.google.com/document/d/1HeQzJ-qkHk0SkwsOfRb1cIsP5tYh3dvR_lsRHoJWYIA/edit?usp=sharing" target="_blank">Resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught front-end developer currently learning HTML, CSS, JavaScript, and building projects on the side. With a background in communication and service-based roles, I understand the importance of accessibility and visual storytelling in digital spaces.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Quiz Game</h3>
+        <p>Interactive quiz on web dev concepts. Built with HTML, CSS & JS.</p>
+        <a href="quiz.html" target="_blank">Try It →</a>
+      </div>
+      <div class="project-card">
+        <h3>Secret Button</h3>
+        <p>A fun little interactive reveal page!</p>
+        <a href="index.html" target="_blank">Explore →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/xzzgkrlj" method="POST">
+      <label for="email">Email</label><br>
+      <input type="email" name="email" required style="width:100%;padding:8px;margin-bottom:1rem;"><br>
+      <label for="message">Message</label><br>
+      <textarea name="message" rows="4" required style="width:100%;padding:8px;"></textarea><br>
+      <button type="submit" style="margin-top:1rem;padding:10px 20px;background:var(--primary);color:white;border:none;border-radius:5px;cursor:pointer;">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Lili B. Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>
+
